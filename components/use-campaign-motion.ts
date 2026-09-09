@@ -73,6 +73,11 @@ export function useCampaignMotion() {
         { opacity: 0, clipPath: 'inset(0 100% 0 0)' },
         { opacity: 1, clipPath: 'inset(0 0% 0 0)' },
       ], 2600, 1000);
+      animate('.campaign-backdrop-mark', rise, 2000, 350);
+      animate('.campaign-portrait-orbit', [
+        { opacity: 0, clipPath: 'inset(0 0 100% 0)' },
+        { opacity: 1, clipPath: 'inset(0 0 0% 0)' },
+      ], 2200, 650);
 
       // Wait for the real assets, with a bounded fallback on slow connections.
       const photo = hero.querySelector<HTMLImageElement>('.campaign-original');
@@ -95,7 +100,7 @@ export function useCampaignMotion() {
         progress += (targetProgress - progress) * .12;
         x += (pointerX - x) * .075;
         y += (pointerY - y) * .075;
-        // Keep the framed portrait anchored; only decorative elements respond to scroll.
+        // Keep the cutout portrait anchored; only decorative light responds to scroll.
         firstShape.style.translate = `${x * -12}px ${progress * -38}px`;
         secondShape.style.translate = `${x * 14}px ${progress * -65}px`;
         seal.style.translate = `0 ${progress * -22}px`;

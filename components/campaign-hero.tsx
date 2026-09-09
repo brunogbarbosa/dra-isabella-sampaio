@@ -54,7 +54,9 @@ export function CampaignHero() {
         <div className="campaign-signature"><span aria-hidden="true"/><div><p>DRA. ISABELLA SAMPAIO</p><em>Biomedicina Estética<br className="campaign-signature-break"/> para uma vida mais confiante.</em></div></div>
       </div>
       <figure className="campaign-portrait">
-        <div className="campaign-silhouette"><Image className="campaign-original" src="/images/isabella-hero.webp" alt="Dra. Isabella Sampaio" fill preload sizes="(max-width:700px) 88vw, 44vw"/></div>
+        <span className="campaign-backdrop-mark" aria-hidden="true">IS</span>
+        <span className="campaign-portrait-orbit" aria-hidden="true"/>
+        <div className="campaign-silhouette"><Image className="campaign-original" src="/images/isabella-hero-cutout.webp" alt="Dra. Isabella Sampaio" fill preload sizes="(max-width:700px) 94vw, 48vw"/></div>
         <SmileSeal/>
       </figure>
     </div>
