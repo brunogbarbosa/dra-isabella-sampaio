@@ -48,16 +48,15 @@ export function CampaignHero() {
         </h1>
         <p className="campaign-subtitle">Beleza, cuidado e confiança<br/>em perfeita harmonia.</p>
         <div className="campaign-action"><a className="campaign-cta" href={appointmentUrl} target="_blank" rel="noreferrer"><span>AGENDAR AVALIAÇÃO</span><ArrowRight size={22} strokeWidth={1.2}/></a></div>
+        <div className="campaign-metrics" aria-label="Pilares do cuidado">
+          {metrics.map(metric=><div className="campaign-metric" key={metric.value}><strong>{metric.value}</strong><span>{metric.label}</span></div>)}
+        </div>
+        <div className="campaign-signature"><span aria-hidden="true"/><div><p>DRA. ISABELLA SAMPAIO</p><em>Biomedicina Estética<br className="campaign-signature-break"/> para uma vida mais confiante.</em></div></div>
       </div>
       <figure className="campaign-portrait">
-        <div className="campaign-silhouette"><Image className="campaign-original" src="/images/isabella-hero.webp" alt="Dra. Isabella Sampaio" fill preload sizes="(max-width:700px) 145vw, (max-width:1100px) 77vw, 60vw"/></div>
+        <div className="campaign-silhouette"><Image className="campaign-original" src="/images/isabella-hero.webp" alt="Dra. Isabella Sampaio" fill preload sizes="(max-width:700px) 88vw, 44vw"/></div>
+        <SmileSeal/>
       </figure>
-      <SmileSeal/>
-      <p className="campaign-editorial">Beleza<br/>também<br/>é saúde<span aria-hidden="true"/></p>
-      <div className="campaign-metrics" aria-label="Pilares do cuidado">
-        {metrics.map(metric=><div className="campaign-metric" key={metric.value}><strong>{metric.value}</strong><span>{metric.label}</span></div>)}
-      </div>
-      <div className="campaign-signature"><span aria-hidden="true"/><div><p>DRA. ISABELLA SAMPAIO</p><em>Biomedicina Estética<br className="campaign-signature-break"/> para uma vida mais confiante.</em></div></div>
     </div>
   </section>;
 }

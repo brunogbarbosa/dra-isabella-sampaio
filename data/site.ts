@@ -32,7 +32,7 @@ export const site = {
   "images": {
     "hero": "/images/isabella-hero.webp",
     "about": "/images/isabella-sobre.webp",
-    "beauty": "/images/isabella-hero.webp"
+    "beauty": "/images/isabella-experiencia.webp"
   },
   "procedures": [],
   "office": [],

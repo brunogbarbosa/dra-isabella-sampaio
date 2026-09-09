@@ -1,35 +1,5 @@
 /* Isabella Sampaio: wine, brushed gold, and the original portrait framing. */
 :root{--rose:#b59756;--rose-deep:#642a33;--rose-light:#dfc990;--ivory:#faf6ef;--wine:#38191d;--line:#94713e38}
-.campaign{background:#281d1d;color:var(--ivory);min-height:820px;max-height:1100px}
-.header:not(.scrolled){color:var(--ivory)}
-.header:not(.scrolled) .brand-monogram{color:var(--champagne)}
-.header:not(.scrolled) .brand-type small{color:#dfc990}
-.header:not(.scrolled) .header-cta{background:transparent;border:1px solid #d8bb7580;color:#e4ce99}
-.header.scrolled{background:#faf6eff5}
-.campaign-copy{width:54%;padding-top:75px}
-.campaign h1{font-size:clamp(65px,6.3vw,112px);line-height:1.04}
-.campaign-title-line:first-child{color:var(--champagne)}
-.campaign-title-line:last-child{font-size:.76em;font-style:italic;color:var(--champagne);margin-top:8px}
-.campaign-kicker{color:#d8bb75;font-size:12px}
-.campaign-subtitle{color:#ded0c5;font-size:18px}
-.campaign-cta{background:#d8bb75;color:#38191d;font-size:12px}
-.campaign-cta:hover{background:#f0d898;color:#38191d}
-.campaign-portrait{width:55%;right:-7.3%;top:-106px;height:calc(100% + 106px);aspect-ratio:auto}
-.campaign-silhouette{mask:linear-gradient(90deg,transparent 0%,#000 25%);-webkit-mask:linear-gradient(90deg,transparent 0%,#000 25%)}
-.campaign-original{object-fit:cover;object-position:55% 20%}
-.campaign-seal{right:0;top:66%;width:130px;color:#e6cd8c}
-.campaign-editorial{display:none}
-.campaign-metrics{width:48%;margin-top:46px;grid-template-columns:1fr 1fr 1fr}
-.campaign-metric{padding-inline:14px}
-.campaign-metric strong{color:#e3c886;font-size:31px}
-.campaign-metric>span{color:#d9c9bd;font-size:10px;letter-spacing:.07em}
-.campaign-metric+.campaign-metric{border-color:#d8bb7540}
-.campaign-signature{bottom:55px;color:#dfc990}
-.campaign-signature em{color:#c9b8aa}
-.campaign-organic-one{background:#4c2426;opacity:.3}
-.campaign-organic-two{background:#693333;opacity:.22}
-.campaign-contour{border-color:#d8bb7550}
-.campaign::after{height:70px;background:linear-gradient(180deg,transparent,#281d1d);bottom:0}
 .essence-stage{height:750px;min-height:0}
 .essence-smile{mask:none;-webkit-mask:none;width:38%;right:7%;top:80px;aspect-ratio:1202/1600;border-radius:46% 46% 3px 3px;overflow:hidden;max-height:630px}
 .essence-smile img{object-fit:cover}
@@ -57,20 +27,22 @@
 .footer{background:#30191d;color:#faf6ef}
 .footer a,.footer-name{color:#e7d1a0}
 .footer-bottom{border-color:#d8bb7538}
-@media(min-width:1800px){.campaign-copy{padding-top:100px}.campaign-portrait{top:-120px;height:calc(100% + 120px)}.essence-stage{height:850px}.essence-smile{max-height:740px}}
-@media(min-width:701px) and (max-width:1100px){
- .campaign{height:850px;min-height:850px}.campaign-copy{width:60%;padding-top:90px}.campaign h1{font-size:6.5vw}.campaign-portrait{width:59%;right:-8%;top:-100px;height:950px}.campaign-metrics{display:grid;width:53%;margin-top:50px;gap:0}.campaign-metric{padding:0 10px!important;text-align:center;border-left:0}.campaign-metric>span{align-self:center}.campaign-metric strong{font-size:27px}.campaign-seal{top:68%;width:110px}.campaign-signature{bottom:55px}.essence-stage{height:690px}.essence-smile{top:120px;width:39%;right:5%}.essence-editorial-copy{margin-left:6%;width:47%;padding-top:35px}.essence-editorial h2{font-size:7vw}.essence-editorial-description{width:95%;font-size:16px}.essence-editorial-cta{max-width:95%;font-size:14px}.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery-item:nth-child(3n+2){padding-top:0}
+@media(min-width:1800px){.essence-stage{height:850px}.essence-smile{max-height:740px}}
+@media(min-width:701px) and (max-width:1100px){.essence-stage{height:690px}.essence-smile{top:120px;width:39%;right:5%}.essence-editorial-copy{margin-left:6%;width:47%;padding-top:35px}.essence-editorial h2{font-size:7vw}.essence-editorial-description{width:95%;font-size:16px}.essence-editorial-cta{max-width:95%;font-size:14px}.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery-item:nth-child(3n+2){padding-top:0}
 }
 @media(max-width:700px){
- .header .brand-type{font-size:11px;letter-spacing:.1em}.header .brand-type small{font-size:8px}.header .brand-monogram{font-size:45px}
- .campaign{padding-top:88px;min-height:0;height:auto}.campaign-inner{height:auto;min-height:950px;padding-bottom:45px}.campaign-copy{width:100%;padding-top:30px}.campaign-kicker{font-size:11px;margin-bottom:18px}.campaign h1{font-size:12vw;line-height:1.02}.campaign-title-line:first-child{max-width:100%}.campaign-title-line:last-child{font-size:.8em}.campaign-subtitle{font-size:16px;max-width:100%;margin-top:20px}.campaign-cta{font-size:11px;min-height:54px;margin-top:22px;padding-inline:22px}
- .campaign-portrait{width:88%;height:auto;aspect-ratio:1242/1600;top:410px;right:-7%;mask:linear-gradient(#000 78%,transparent);-webkit-mask:linear-gradient(#000 78%,transparent)}
- .campaign-silhouette{mask:linear-gradient(90deg,transparent,#000 20%);-webkit-mask:linear-gradient(90deg,transparent,#000 20%)}
- .campaign-original{object-position:center top}.campaign-seal{width:87px;right:0;top:17px}.campaign-seal{display:none}.campaign-editorial{display:none}
- .campaign-metrics{position:relative;display:flex;width:30%;flex-direction:column;gap:30px;margin-top:76px}.campaign-metric{padding:0 0 0 10px!important;gap:6px;text-align:left;border-left:1px solid #d8bb7550}.campaign-metric strong{font-size:27px}.campaign-metric>span{font-size:9px;max-width:100px;align-self:start}.campaign-signature{display:none}.campaign::after{height:42px}.campaign-organic-one{background:#593032}.campaign-organic-two{background:#633537}
  .essence-stage{height:auto;min-height:0;padding-bottom:55px;display:flex;flex-direction:column}.essence-editorial-top{order:0;width:88%;margin:auto}.essence-editorial-top p:first-child{font-size:11px}.essence-editorial-top p:last-child{font-size:9px}.essence-editorial-copy{order:1;position:relative;width:88%;margin:0 auto;padding-top:32px}.essence-editorial h2{font-size:14vw}.essence-editorial-prelude{font-size:21px;max-width:100%}.essence-editorial-description{font-size:16px;width:100%;max-width:390px}.essence-editorial-cta{font-size:14px;max-width:100%;flex-direction:row;align-items:center}.essence-smile{order:2;position:relative;inset:auto;width:80%;aspect-ratio:1202/1400;margin:38px auto 0;max-height:600px;border-radius:45% 45% 3px 3px}.essence-smile img{object-fit:cover;object-position:50% 30%}.essence-margin-note{display:none}.essence-thread-mobile{height:100%;width:100%}.essence-value p{font-size:14px}.essence-values-label{font-size:10px;letter-spacing:.08em;white-space:normal;text-align:center}.essence-values-label span{flex-shrink:0;width:16px}
  .gallery-grid{grid-template-columns:1fr;gap:32px}.gallery-item:nth-child(3n+2){padding-top:0}.gallery-photo{aspect-ratio:1}.gallery-heading p{font-size:16px;max-width:100%}.gallery-item figcaption{font-size:14px}.gallery-end p{font-size:14px}.closing-bottom>span{font-size:13px}
 }
-@media(min-width:500px) and (max-width:700px){.campaign-inner{min-height:1200px}.campaign-portrait{top:480px}.campaign-metrics{margin-top:100px}}
-@media(max-width:700px){.campaign-portrait{mask:linear-gradient(transparent 0%,#000 9%,#000 78%,transparent);-webkit-mask:linear-gradient(transparent 0%,#000 9%,#000 78%,transparent)}}
 @media(min-width:701px){.essence-margin-note{left:2%;writing-mode:vertical-rl;bottom:45px}.essence-margin-note span{display:none}}
+/* A concise, high-contrast closing invitation in the same wine and gold palette. */
+.closing-chapter{display:grid;grid-template-columns:1.15fr 1fr;align-items:center;gap:9%;padding:88px 8%;background:radial-gradient(ellipse at 0 0,#721c35,#450b20 65%);color:#fff5e5;text-align:left;border-top:1px solid #d8bb7540}
+.closing-heading .chapter-tag{color:#e3c27c;font-size:12px;letter-spacing:.16em}
+.closing-chapter h2{font-size:clamp(68px,6.5vw,112px);line-height:1.03;margin:24px 0 0;color:#fff5e5}
+.closing-chapter h2 em{color:#e3c27c}
+.closing-bottom{display:flex;flex-direction:column;align-items:flex-start;gap:25px}
+.closing-bottom p{font-size:18px;line-height:1.8;color:#ecd9d8;max-width:410px}
+.closing-bottom .chapter-link{min-width:0;min-height:60px;background:#e3c27c;color:#39091b;padding:16px 27px;border:0;border-radius:100px;font-size:14px;gap:25px;letter-spacing:0}
+.closing-bottom .chapter-link:hover{background:#f4dcaa}
+.closing-bottom>span{color:#d5b6b7;font-size:13px;letter-spacing:.03em}
+@media(max-width:700px){.closing-chapter{grid-template-columns:1fr;gap:32px;padding:52px 6%}.closing-chapter h2{font-size:17vw}.closing-bottom p{font-size:16px;max-width:100%}.closing-bottom .chapter-link{font-size:13px;min-height:56px;padding-inline:24px}.closing-heading .chapter-tag{font-size:11px}}

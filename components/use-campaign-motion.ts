@@ -95,8 +95,7 @@ export function useCampaignMotion() {
         progress += (targetProgress - progress) * .12;
         x += (pointerX - x) * .075;
         y += (pointerY - y) * .075;
-        const distance = innerWidth <= 700 ? 28 : 64;
-        portrait.style.translate = `${x * 9}px ${progress * distance + y * 5}px`;
+        // Keep the framed portrait anchored; only decorative elements respond to scroll.
         firstShape.style.translate = `${x * -12}px ${progress * -38}px`;
         secondShape.style.translate = `${x * 14}px ${progress * -65}px`;
         seal.style.translate = `0 ${progress * -22}px`;

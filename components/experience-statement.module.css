@@ -601,3 +601,7 @@
 .photoArc{opacity:.5}
 .quote cite{font-size:11px;letter-spacing:.16em}
 @media(max-width:700px){.root{background:linear-gradient(135deg,#faf6ef,#f0e6d8)}.heading h2{font-size:14.5vw;line-height:.9}.photo{width:100%;margin-inline:auto;aspect-ratio:.8}.photo img{object-position:center 10%}.subtitle{font-size:11px;letter-spacing:.15em}.quote p{font-size:23px}.quote cite{font-size:10px}.cta{font-size:12px}}
+.photo img{object-position:center 24%}
+.photoCopy{display:none}
+.photoArc{opacity:.25}
+@media(max-width:700px){.photo{aspect-ratio:1132/1390}.photo img{object-position:center top}}
